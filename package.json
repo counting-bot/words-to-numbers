@@ -3,17 +3,15 @@
   "description": "convert textual words to numbers with optional fuzzy text matching",
   "version": "1.5.1",
   "license": "MIT",
-  "options": {
-    "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
-  },
+  "main": "src/index.mjs",
   "scripts": {
     "start": "babel --watch --plugins \"transform-runtime\" src --ignore __tests__ --out-dir ./dist",
-    "prepublish": "babel --plugins \"transform-runtime\" src --ignore __tests__ --out-dir ./dist",
-    "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix",
-    "testonly": "mocha $npm_package_options_mocha",
-    "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js"
+      "prepublish": "babel --plugins \"transform-runtime\" src --ignore __tests__ --out-dir ./dist",
+      "lint": "eslint ./src",
+      "lintfix": "eslint ./src --fix",
+      "testonly": "mocha $npm_package_options_mocha",
+      "test": "npm run lint && npm run testonly",
+      "test-watch": "npm run testonly -- --watch --watch-extensions js"
   },
   "devDependencies": {
     "babel-cli": "6.x.x",
@@ -27,8 +25,7 @@
     "eslint": "1.7.x",
     "eslint-plugin-babel": "2.x.x",
     "its-set": "^1.1.5",
-    "mocha": "2.x.x",
-    "nodemon": "1.7.x"
+    "mocha": "2.x.x"
   },
   "author": "Finn Fitzsimons <hello@finn.works>",
   "bugs": {
@@ -41,7 +38,6 @@
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
-    "clj-fuzzy": "^0.3.2",
     "its-set": "^1.1.5"
   }
 }
