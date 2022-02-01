@@ -39,17 +39,6 @@ Returns a string with all instances replaced.
 wordsToNumbers('there were twenty-thousand, five-hundred and sixty-nine X in the five quintillion Y')) // 'there were 20569 X in the 5000000000000000000 Y'
 ```
 
-## With Fuzzy Matching
-
-Uses [Jaro distance](http://yomguithereal.github.io/clj-fuzzy/javascript.html#jaro) to find the best match for the number words. Don't rely on this being completely accurate...
-
-```javascript
-import wordsToNumbers from 'words-to-numbers';
-wordsToNumbers('won huntred', {fuzzy: true}); //100
-wordsToNumbers('too thousant and fiev', {fuzzy: true}); //2005
-wordsToNumbers('tree millyon sefen hunderd and twinty sex', {fuzzy: true}); //3000726
-```
-
 ## Decimal Points
 
 ```javascript
