@@ -4,19 +4,6 @@
   "version": "1.5.1",
   "license": "MIT",
   "main": "src/index.mjs",
-  "scripts": {
-    "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix",
-    "testonly": "mocha $npm_package_options_mocha",
-    "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js"
-  },
-  "devDependencies": {
-    "chai": "3.x.x",
-    "eslint": "1.7.x",
-    "its-set": "^1.1.5",
-    "mocha": "2.x.x"
-  },
   "author": "Finn Fitzsimons <hello@finn.works>",
   "bugs": {
     "url": "https://github.com/finnfiddle/words-to-numbers/issues"
@@ -25,7 +12,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/finnfiddle/words-to-numbers.git"
-  },
-  "dependencies": {
   }
 }
